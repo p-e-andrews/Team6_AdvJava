@@ -49,7 +49,7 @@ public class Car {
 	
 	public String toString() {
 		
-		String printable = String.format("Car: %-20s, Mileage: %6d, MPG: %3d, Sold: %4s, Cost: $%5.2f, Selling price: $%6.2f",
+		String printable = String.format("Car: %-2s, Mileage: %6d, MPG: %3d, Sold: %2s, Cost: $%5.2f, Selling price: $%6.2f",
 				this.getId(), this.getMileage(), this.getMpg(), (this.isSold() ? "Yes" : " No"), this.getCost(), this.getSalesPrice());
 		
 		printable = printable + (this.isSold() ? 
